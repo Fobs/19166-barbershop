@@ -1,3 +1,7 @@
+* {
+	outline: 1px solid black;
+}
+
 body {
 	min-width: 960px;
 	font-family: 'PT Sans Narrow', Arial, sans-serif;
@@ -6,7 +10,16 @@ body {
 	line-height: 24px;
 	text-transform: uppercase;
 	color: #ffffff;
+}
+
+
+
+.main {
 	background: #000000 url('../img/background.png') no-repeat center top;
+}
+
+.catalog-item {
+	background: #ffffff url('../img/inner_bg.png') ;
 }
 
 .clearfix:after {
@@ -588,5 +601,48 @@ body {
     z-index: 11;
 }
 
+.top h1 {
+	color: black;
+}
+
+.content-m {
+	display: block;
+	width: 935px;
+	margin: 0 auto;
+}
+
+.site-map {
+	list-style: none;
+	font-size: 0;
+	padding: 0;
+}
+
+.site-map li {
+	position: relative;
+	font-size: 14px;
+	display: inline-block;
+	margin-right: 32px;
+}
+
+.site-map li a {
+	color: black;
+	text-decoration: none;
+}
+
+.site-map li::after {
+	content: '';
+	position: absolute;
+	display: block;
+	width: 10px;
+	height: 10px;
+	top: 7px;
+	right: -21px;
+	background-color: #000000;
+	transform: rotate(45deg);
+}
+
+.site-map li:last-child::after {
+	display: none;
+}
 
 
