@@ -615,6 +615,7 @@ body {
 	list-style: none;
 	font-size: 0;
 	padding: 0;
+	margin-bottom: 50px;
 }
 
 .site-map li {
@@ -643,6 +644,26 @@ body {
 
 .site-map li:last-child::after {
 	display: none;
+}
+
+.active-li {
+	color: #b7b5b3;
+}
+
+.description {
+	font-size: 14px;
+	line-height: 24px;
+	color: black;
+}
+
+.left {
+	float: left;
+}
+
+.clearfix:after {
+	display: table;
+	clear: both;
+	content: '';
 }
 
 
