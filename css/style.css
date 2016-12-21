@@ -666,4 +666,6 @@ body {
 	content: '';
 }
 
-
+.active-not:hover {
+	color: #663d15;
+}
